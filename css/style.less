@@ -460,7 +460,6 @@
 	.team-number
 	{
 		display: inline-block;
-		position: relative;
 		width: 270px;
 	}
 	.team-name
@@ -496,10 +495,6 @@
 	}
 	.team-board
 	{
-		position: absolute;
-		left: 50%;
-		margin-left: -50%;
-		top: 50%;
 		display: inline-block;
 		width: 262px;
 		padding: 40px 0;
@@ -508,5 +503,78 @@
 		line-height: 20px;
 		background-color: rgba(0,0,0, .7);
 
+	}
+	.team-pagination
+	{
+		position: relative;
+	}
+	.board-position2
+	{
+		position: absolute;
+		top:41%;
+		left:50%;
+		margin-left: -15%;
+	}
+	.board-position1
+	{
+		position: absolute;
+    top: 41%;
+    left: 50%;
+    margin-left: -49%;
+	}
+	.board-position3
+	{
+		position: absolute;
+		top:41%;
+		left:50%;
+		margin-left: 12%;
+	}
+	.team-control label
+	{
+		width: 17px;
+		height: 17px;
+		display: inline-block;
+		background-color: #f2f2f2;
+		border-radius: 50%;
+	}
+	.team-control
+	{
+		padding-top: 120px;
+	}
+	#btn-1:checked ~ .team-control label:nth-child(1)
+	{
+		background-color: #bababa;
+	}
+	#btn-2:checked ~ .team-control label:nth-child(2)
+	{
+		background-color: #bababa;
+	}
+	#btn-3:checked ~ .team-control label:nth-child(3)
+	{
+		background-color: #bababa;
+	}
+	.team-boards .team-board
+	{
+		display: none;
+	}
+	#btn-1:checked ~ .team-boards .team-board:nth-child(1)
+	{
+		display: inline-block;
+	}
+	#btn-2:checked ~ .team-boards .team-board:nth-child(2)
+	{
+		display: inline-block;
+	}
+	#btn-3:checked ~ .team-boards .team-board:nth-child(3)
+	{
+		display: inline-block;
+	}
+	input[type="radio"]
+	{
+		position: absolute;
+		opacity: 0;
+    top: 87%;
+    left: 50%;
+    margin-left: -1%;
 	}
 }
