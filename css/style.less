@@ -455,6 +455,8 @@
 ==================================*/
 .team
 {
+	background-color: #fff;
+	padding-bottom: 320px;
 
 
 	.team-number
@@ -576,5 +578,375 @@
     top: 87%;
     left: 50%;
     margin-left: -1%;
+	}
+}
+.works
+{
+	background-color: #fff;
+	padding-bottom: 245px;
+
+	.works-columns
+	{
+		padding-top: 100px;
+		padding-bottom: 160px;
+		background-color: #f3f3f3;
+	}
+	.works-icon i
+	{
+		font-size: 36px;
+		display: inline-block;
+		color: #333;
+	}
+	.works-control label
+	{
+		width: 300px;
+		background-color: #fff;
+		padding: 22px 0;
+		border-radius: 8px;
+		border-bottom: 3px solid #ccc;
+		cursor: pointer;
+	}
+	.works-control
+	{
+		width: 300px;
+		display: inline-block; 
+	}
+	.works-title	
+	{
+		font-size: 14px;
+		line-height: 14px;
+		color: #666;
+		font-weight: 700;
+		margin: 0;
+		text-transform: uppercase;
+		padding-top: 5px;
+		padding-bottom: 10px;
+	}
+	.works-text
+	{
+		font-size: 14px;
+		line-height: 14px;
+		color: #999;
+		font-style: italic;
+		font-weight: 400;
+	}
+	.works-slider
+	{
+		position: relative;
+	}
+	#button-1:checked ~ .works-control label:nth-child(1) i,
+	#button-2:checked ~ .works-control label:nth-child(2) i, 
+	#button-3:checked ~ .works-control label:nth-child(3) i, 
+	#button-4:checked ~ .works-control label:nth-child(4) i, 
+	#button-5:checked ~ .works-control label:nth-child(5) i  
+	{
+		color:#fff;
+		background-color: #ffca26;
+	}
+	#button-1:checked ~ .works-control label:nth-child(1) p,
+	#button-2:checked ~ .works-control label:nth-child(2) p,
+	#button-3:checked ~ .works-control label:nth-child(3) p,
+	#button-4:checked ~ .works-control label:nth-child(4) p,
+	#button-5:checked ~ .works-control label:nth-child(5) p
+	{
+		color:#fff;
+		background-color: #ffca26;
+	}
+	#button-1:checked ~ .works-control label:nth-child(1),
+	#button-2:checked ~ .works-control label:nth-child(2),
+	#button-3:checked ~ .works-control label:nth-child(3),
+	#button-4:checked ~ .works-control label:nth-child(4),
+	#button-5:checked ~ .works-control label:nth-child(5)
+	{
+		background-color: #ffca26;
+		border-bottom: 3px solid #996600;
+	}
+	
+	input[type="radio"]
+	{
+		position: absolute;
+		left: 59%;
+		top: 50%;
+		margin-left: 50%;
+		display: inline-block;
+		opacity: 0;
+	}
+	.slides
+	{
+		display: inline-block;
+		width: 523px;
+		margin-left: 30px;
+	}
+	.slides .slide
+	{
+		position: absolute;
+    top: -1%;
+    left: 50%;
+    margin-left: -13%;
+	}
+	.slides .slide
+	{
+		display: none;
+	}
+	#button-1:checked ~ .slides .slide:nth-child(1)
+	{
+		display: block;
+	}
+	#button-2:checked ~ .slides .slide:nth-child(2)
+	{
+		display: block;
+	}
+	#button-3:checked ~ .slides .slide:nth-child(3)
+	{
+		display: block;
+	}
+	#button-4:checked ~ .slides .slide:nth-child(4)
+	{
+		display: block;
+	}
+	#button-5:checked ~ .slides .slide:nth-child(5)
+	{
+		display: block;
+	}
+	.works-right-title
+	{
+		font-size: 24px;
+		line-height: 30px;
+		font-weight: 700;
+		color: #333;
+		margin: 0;
+		text-transform: uppercase;
+	}
+	.works-right-text
+	{
+		font-size: 16px;
+		line-height: 24px;
+		color: #999;
+		margin: 0;
+		padding-top: 35px;
+		padding-bottom: 70px;
+	}
+}
+.portfolio
+{
+	padding-bottom: 250px;
+
+	.paginations .pagination
+	{
+		display: none;
+	}
+	.paginations
+	{
+		min-height: 520px;
+	}
+	#pag-1:checked ~ .paginations .pagination:nth-child(1)
+	{
+		display: block;
+	}
+	#pag-2:checked ~ .paginations .pagination:nth-child(2)
+	{
+		display: block;
+	}
+	#pag-3:checked ~ .paginations .pagination:nth-child(3)
+	{
+		display: block;
+	}
+	#pag-4:checked ~ .paginations .pagination:nth-child(4)
+	{
+		display: block;
+	}
+	#pag-5:checked ~ .paginations .pagination:nth-child(5)
+	{
+		display: block;
+	}
+	/*===================================================
+	========================================================*/
+	#pag-1:checked ~ .portfolio-control label:nth-child(1)
+	{
+		background-color: #f1f1f1;
+	}
+	#pag-2:checked ~ .portfolio-control label:nth-child(2)
+	{
+		background-color: #f1f1f1;
+	}
+	#pag-3:checked ~ .portfolio-control label:nth-child(3)
+	{
+		background-color: #f1f1f1;
+	}
+	#pag-4:checked ~ .portfolio-control label:nth-child(4)
+	{
+		background-color: #f1f1f1;
+	}
+	#pag-5:checked ~ .portfolio-control label:nth-child(5)
+	{
+		background-color: #f1f1f1;
+	}
+	.portfolio-img1
+	{
+		background-image: url("../img/works-pagination-img1.jpg");
+		width: 256px;
+		height: 256px;
+		display: inline-block;
+		margin: 0 -2px;
+	}
+	.portfolio-img2
+	{
+		background-image: url("../img/works-pagination-img2.jpg");
+		width: 256px;
+		height: 256px;
+		display: inline-block;
+		margin: 0 -2px;
+	}
+	.portfolio-img3
+	{
+		background-image: url("../img/works-pagination-img3.jpg");
+		width: 256px;
+		height: 256px;
+		display: inline-block;
+		margin: 0 -2px;
+	}
+	.portfolio-img4
+	{
+		background-image: url("../img/works-pagination-img4.jpg");
+		width: 256px;
+		height: 256px;
+		display: inline-block;
+		margin: 0 -2px;
+	}
+	.portfolio-img5
+	{
+		background-image: url("../img/works-pagination-img5.jpg");
+		width: 256px;
+		height: 256px;
+		display: inline-block;
+		margin: 0 -2px;
+	}
+	.portfolio-img6
+	{
+		background-image: url("../img/works-pagination-img6.jpg");
+		width: 256px;
+		height: 256px;
+		display: inline-block;
+		margin: 0 -2px;
+	}
+	.portfolio-img7
+	{
+		background-image: url("../img/works-pagination-img7.jpg");
+		width: 256px;
+		height: 256px;
+		display: inline-block;
+		margin: 0 -2px;
+	}
+	.portfolio-img8
+	{
+		background-image: url("../img/works-pagination-img8.jpg");
+		width: 256px;
+		height: 256px;
+		display: inline-block;
+		margin: 0 -2px;
+	}
+	.portfolio-img9
+	{
+		background-image: url("../img/works-pagination-img9.jpg");
+		width: 256px;
+		height: 256px;
+		display: inline-block;
+		margin: 0 -2px;
+	}
+	.portfolio-img10
+	{
+		background-image: url("../img/works-pagination-img10.jpg");
+		width: 256px;
+		height: 256px;
+		display: inline-block;
+		margin: 0 -2px;
+	}
+	.portfolio-img11
+	{
+		background-image: url("../img/works-pagination-img11.jpg");
+		width: 256px;
+		height: 256px;
+		display: inline-block;
+		margin: 0 -2px;
+	}
+	.portfolio-img12
+	{
+		background-image: url("../img/works-pagination-img12.jpg");
+		width: 256px;
+		height: 256px;
+		display: inline-block;
+		margin: 0 -5px;
+	}
+	.portfolio-control label
+	{
+		font-size: 14px;
+		line-height: 20px;
+		color: #666;
+		padding: 5px 15px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		margin-right: 5px;
+		cursor: pointer;
+	}
+	.porfolio-decor
+	{
+		width: 100%;
+		height: 100%;
+		cursor: pointer;
+		border: 12px solid rgba(197,166,73,0.0);
+	}
+	.porfolio-decor:hover
+	{
+		background-color: rgba(248,207,85,0.7);
+		border: 12px solid rgba(197,166,73,0.5);
+	}
+	.porfolio-decor:hover .portfolio-icon,
+	.porfolio-decor:hover .portfolio-title,
+	.porfolio-decor:hover .portfolio-text
+	{
+		opacity: 1;
+	} 
+	.portfolio-icon i
+	{
+		font-size: 12px;
+		color: #fff;
+		display: inline-block;
+		padding: 10px;
+		border: 2px solid #fff;
+		border-radius: 50%;
+		margin-right: 11px;
+	}
+	.portfolio-icon
+	{
+		padding-top: 80px;
+		opacity: 0;
+
+	}
+	.portfolio-title
+	{
+		font-size: 12px;
+		line-height: 12px;
+		font-weight: 700;
+		color: #333;
+		text-transform: uppercase;
+		padding-top: 20px;
+		padding-bottom: 10px;
+		margin: 0;
+		opacity: 0;
+	}
+	.portfolio-text
+	{
+		font-size: 12px;
+		line-height: 12px;
+		color: #960;
+		margin: 0;
+		opacity: 0;
+	}
+	.portfolio-pagination input
+	{
+		position: absolute;
+		left: 50%;
+		top: -6%;
+		opacity: 0;
 	}
 }
